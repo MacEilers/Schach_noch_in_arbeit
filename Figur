@@ -1,0 +1,28 @@
+public class Figur {
+    int row;
+    int col;
+    int[][] moves;
+    String colore;
+    String name;
+    
+    
+    Figur(int row,int col ,String name, String colore){
+        this.row = row;
+        this.col = col;
+        this.colore = colore;
+        this.name = name;
+    }
+    
+    public void setRow(int row) {
+            this.row = row;
+        }
+    public int getRow() {
+        return row;
+    }
+    public void setCol(int col) {
+            this.col = col;
+        }
+    public int getCol() {
+        return col;
+    }
+}
