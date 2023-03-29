@@ -1,0 +1,89 @@
+import java.awt.event.ActionListener;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author tjorven
+ */
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.nio.file.FileStore;
+
+public class Brett_user implements ActionListener {
+    JFrame frame;
+    JButton[][] position = new JButton[8][8];
+    JPanel panel;
+    Brett_user(Figur Sb[][]){
+        frame = new JFrame("Schach");
+        frame.setSize(800, 800);
+	frame.setLayout(null);
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        panel = new JPanel();
+		panel.setBounds(100, 100, 600, 600);
+                
+                
+		panel.setLayout(new GridLayout(8, 8, 8, 8));
+                
+                
+                
+                
+                //Sb[0][0] = Figur(0,0,"T","W");
+                
+        
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                String helper;
+                if (Sb[i][j]!=null){
+                    helper = Sb[i][j].name;
+                }
+                else{helper = "";}
+		position[i][j] = new JButton(helper);
+		position[i][j].addActionListener(this);
+                
+                
+                
+                panel.add(position[i][j]);
+		
+		
+            }
+	}
+        frame.add(panel);
+        frame.setVisible(true);
+
+
+    }
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+                Figur[][] SB = new Figur[8][8];
+                
+                
+		Brett_user Brett_user = new Brett_user(SB);
+	}
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                
+            
+			if (e.getSource() == position[i][j]) {
+                            
+                            // nim die Figur und speicher sie wenn vohanden 
+                            // count = 1
+                            // wenn count 1 
+                            // das selbe feld count 0 und figur losslassen
+                            // sonst überprüfen was die möglichen felder der Figur sind wenn Felld möglich ist dann Setze Figut nach dort und lösche die alte Figur
+                            
+
+			}
+            }
+        }
+    }
+            
+}
