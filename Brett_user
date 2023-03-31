@@ -122,9 +122,10 @@ public class Brett_user implements ActionListener {
                             // nim die Figur und speicher sie wenn vohanden 
                             // count = 1
                             // wenn count 1 
+			    
                             // das selbe feld count 0 und figur losslassen
                             // sonst überprüfen was die möglichen felder der Figur sind wenn Felld möglich ist dann Setze Figut nach dort und lösche die alte Figur
-                            
+                            // funktioniert so nicht ... 
 
 			}
             }
