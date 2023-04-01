@@ -1,9 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author tjorven
+ */
 public class Figur {
     int row;
     int col;
     int[][] moves;
     String colore;
     String name;
+    
+    boolean[][] moegliche_faelder;
     
     
     Figur(int row,int col ,String name, String colore){
@@ -25,4 +36,58 @@ public class Figur {
     public int getCol() {
         return col;
     }
+    public void setName(String name) {
+            this.name = name;
+        }
+    public String getName() {
+        return name;
+    }
+    public void setColore(String colore) {
+            this.colore = colore;
+        }
+    public String getColore() {
+        return colore;
+    }
+    public void calc_moves(){
+         if (this.name == "T"){
+             // links rechts 
+             // oben unten 
+             // for loop 
+             // break wenn Figur eigener farbe 
+             // break nächstes feld wenn gegner Figur 
+         }
+         else if (this.name == "S"){
+             
+         }
+         else if (this.name == "L"){
+             
+         }
+         else if (this.name == "K"){
+             
+         }
+         else if (this.name == "Q"){
+             
+         }
+         else if (this.name == "B"){
+             
+         }
+        
+         
+         
+         
+        
+    /*
+    
+    
+    schaut um welche Figur es sich handelt 
+    verzweigung mit case ?
+    geht von getrow und get colum die indivduelen züge,
+    auser bei knight geht in richtung, schaut ob das feld eine andere figur belegt 
+    wenn nein set ture und gehe weiter
+    else se
+    
+    
+    */
+   }
+    
 }
