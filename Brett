@@ -1,8 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author tjorven
+ */
 public class Brett {
     Figur[][] SB = new Figur [8][8];
     public static void main(String[] args) {
         Figur[][] SB = new Figur [8][8];
         boolean  Spieler;
+        boolean Game_over =false;
     
     
     
@@ -10,12 +20,12 @@ public class Brett {
     
            
                 SB[0][0] =new Figur(0,0,"T","W");
-                SB[0][1] =new Figur(0,1,"SP","W");
+                SB[0][1] =new Figur(0,1,"S","W");
                 SB[0][2] =new Figur(0,2,"L","W");
                 SB[0][3] =new Figur(0,3,"Q","W");
                 SB[0][4] =new Figur(0,4,"K","W");
                 SB[0][5] =new Figur(0,5,"L","W");
-                SB[0][6] =new Figur(0,6,"SP","W");
+                SB[0][6] =new Figur(0,6,"S","W");
                 SB[0][7] =new Figur(0,7,"T","W");
                 
                 for (int i = 0; i < 8; i++) {
@@ -23,22 +33,41 @@ public class Brett {
                      SB[6][i] =new Figur(6,i,"B","B");
                      
                 }
+                for (int i = 0; i < 8; i++) {
+                     SB[2][i] =new Figur(2,i," "," ");
+                     SB[3][i] =new Figur(3,i," "," ");
+                     SB[4][i] =new Figur(4,i," "," ");
+                     SB[5][i] =new Figur(5,i," "," ");
+                     
+                }
                 
                 SB[7][0] =new Figur(7,0,"T","B");
-                SB[7][1] =new Figur(7,1,"SP","B");
+                SB[7][1] =new Figur(7,1,"S","B");
                 SB[7][2] =new Figur(7,2,"L","B");
                 SB[7][3] =new Figur(7,3,"Q","B");
                 SB[7][4] =new Figur(7,4,"K","B");
                 SB[7][5] =new Figur(7,5,"L","B");
-                SB[7][6] =new Figur(7,6,"SP","B");
+                SB[7][6] =new Figur(7,6,"S","B");
                 SB[7][7] =new Figur(7,7,"T","B");
     
-
-      
+                
+                
+while(Game_over == false){
+               // Sieler true = Weis
+               // Spiler false = Black 
+               
+                
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                System.out.print(SB[i][j].getName()+"  ");
+            }
+            System.out.println("");
+        }
     }
     
     
-        
+}    
     
 
 }
+
