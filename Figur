@@ -1,18 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author tjorven
- */
 public class Figur {
     int row;
     int col;
     int[][] moves;
     String colore;
     String name;
+    
+    Figur[][] aktuelles_brett;
     
     boolean[][] moegliche_faelder;
     
@@ -48,6 +41,9 @@ public class Figur {
     public String getColore() {
         return colore;
     }
+    public void setAktuellesBrett(Figur[][] aktuelles_brett) {
+            this.aktuelles_brett = aktuelles_brett;
+        }
     public void calc_moves(){
          if (this.name == "T"){
              // links rechts 
