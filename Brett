@@ -1,17 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author tjorven
- */
 public class Brett {
     Figur[][] SB = new Figur [8][8];
     public static void main(String[] args) {
+        
+        // erstellen 
         Figur[][] SB = new Figur [8][8];
-        boolean  Spieler;
+        boolean  spieler = true;
         boolean Game_over =false;
     
     
@@ -51,12 +44,43 @@ public class Brett {
                 SB[7][7] =new Figur(7,7,"T","B");
     
                 
-                
+              // Spiel begint ab hier  
 while(Game_over == false){
                // Sieler true = Weis
                // Spiler false = Black 
                
+               if(spieler == false ){
+                   spieler = true;
+               }
+               else{
+                   spieler =false;
+               }
+               
+               
+               
+               
+               // überprüft ob spieler im schach
+                    // wenn ja dann 
+                        // überprüfen ob schach matt aber wie ???
+                        
+                // sonst mache das und alle züge sind legale züge ??
+                // normaler zug kann sich selber schach setzen 
+               
+                for (int i = 0; i < 8; i++) {
+                    for (int j = 0; j < 8; j++) {
+                        SB[i][j].calc_moves();
+                    }
+                }
                 
+                
+                // irgendwie UI am besten JFrame mit JButtons 
+                // notfals mit der Konsohle 0-0-3-0 
+                
+                // nach dem Zug wird überprüft ob der König immernoch nicht im Schach ist, 
+                // ist eigener könich nicht im schach wird der zug endgültig durchgeführt, wenn
+                // schach entsteht wird while loop wiederholt und zug nicht ausgeführt 
+                
+                 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 System.out.print(SB[i][j].getName()+"  ");
@@ -70,4 +94,3 @@ while(Game_over == false){
     
 
 }
-
