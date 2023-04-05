@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 /**
  *
  * @author tjorven
+ * Frontend 
+ * Wie kann ich das mit backend verbinden ?
  */
 import javax.swing.*;
 import java.awt.*;
